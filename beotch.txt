@@ -1,1 +1,0 @@
-WriteLine("Ayo where the white women at?");
