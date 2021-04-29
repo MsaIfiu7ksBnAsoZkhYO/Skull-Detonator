@@ -17,8 +17,17 @@ onEvent('block.registry', event => {
 	// event.create('example_block').material('wood').hardness(1.0).displayName('Example Block')
 
 	//Unifaciton block items
-	event.create('uni_ore').material('stone').hardness(5.0).displayName('Unifaction Ore')
+	event
+		.create('uni_ore')
+		.material('stone')
+		.hardness(2.0)
+		.harvestTool('pick',3)
+		.displayName('Unifaction Ore')
+		.requiresTool(true)
+
 	event.create('uni_block').material('iron').hardness(5.0).displayName('Block of Unifact')
+		.harvestTool('axe',3)
+		.harvestTool('shovel',3)
 
 })
 
